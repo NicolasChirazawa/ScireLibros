@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 600px) {
+    body > header > div > p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body > header > div > p {
+
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body > header > div {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body > header > div {
+        height: 60px;
+    }
+}
+
+:root{
+    --cor0: #e0dfd58a;
+    --cor1: #313638;
+    --cor2: #F09D51;
+    --cor3: #E8E9EB;
+    --cor4: #F06543;
+
+    --fonte-head: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body > header > div{
+
+    position: relative;
+
+    background-color: var(--cor3);
+
+    border-bottom: 2px solid #ffffff
+}
+
+body > header > div > p{
+
+    position: relative;
+
+    font-family: var(--fonte-head);
+
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+body > header > div > img {
+    
+    position: absolute;
+
+    height: 20px;
+    width: 20px;
+    
+    top: 20px;
+    padding-right: 5%;  
+    margin-left: 75%;  
+}
+
+body > header > div > a#direita{
+    
+    position: absolute;
+    
+    text-align: right;
+    font-family: var(--fonte-head);
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    
+    padding: 0px;
+    margin-left: 78%;
+    top: 15px;
+    padding-right: 5%;  
+}
+
+body > header > div > a#direita:hover{
+    
+   text-decoration-line: underline;
+}
+
+body > header{
+
+    background-color: var(--cor1);
+    height: 135px;
+
+    border-bottom: 2px solid #ffffff
+}
+
+body > header > img {
+
+    height: 40px;
+    padding: 15px;
+}
+
+body > nav {
+
+    height: 40px;
+    background-color: var(--cor0);
+}
+
+body > nav > p > a {
+
+    font-family: var(--fonte-head);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+body > nav > p > a:hover {
+
+    text-decoration-line: underline ;
+}
