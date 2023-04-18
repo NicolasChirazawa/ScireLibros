@@ -36,65 +36,84 @@ body > header{
 body > header > img{
 
     width: 10%;
+    position: relative;
 
     padding-left: 15px;
 }
 
-/*Novo teste */
+    body > header > span#texto {
 
-body > header > img#menu{
+        position: absolute;
 
-    float: right;
+        color: white;
+        font-size: 2vw;
+
+        left: 87vw;
+        top: 2.75vw;
     
-    width: 1.7%;
-    filter: brightness(60%);
+    } 
 
-    padding-right: 3vw;
-    padding-top: 1.5vw;
+body > header > span#menu_suspenso > img#menu_fora{
 
-}
+    position: absolute;
 
-body > header > img#menu:hover{
+    width: 2.7%;
+
+    left: 83vw;
+    top: 3.05vw;
+
+    padding: 0px;
 
     filter: brightness(100%);
-
 }
 
+/* Triângulo do menu visual desaparece */
+body > header > span#menu_suspenso:hover > img#menu_fora{
 
-/* Teste
+    filter: brightness(0%);
+}
 
-body > header > p{
+/* Bloco sem esncostar não aparece, somente quando o mouse é colocado por cima */
+body > header > span#menu_suspenso > div#bloco{
 
-    font-family: var(--fonte_banner);
-    font-size: 2.2vw;
+    display: none;
+}
+
+/* Bloco Aparece */
+body > header > span#menu_suspenso:hover > div#bloco{
+
+    display: block;
+    position: absolute;
+
+    font-size: 1.7vw;
     font-weight: bold;
-    color: white;
 
     float: right;
-    padding-right: 1vw;
-    padding-top: 1.5vw;
-}
-
-body > header > p > a{
-
-    text-decoration: none;
-
-    margin-right: 40px;
-    padding: 10px;
-}
-
-body > header > p > a:visited{
-
     color: white;
+    background-color: black;
+
+    width: 14vw; 
+    border: 0.2vw solid white;
+
+    left: 80vw;
+    top: 2.5vw
+
 }
 
-body > header > p > a:hover{
+body > header > span#menu_suspenso > div#bloco > a{
 
-    color: rgb(100, 100, 100);
-    transition: 0.5s;
+    display: block;
+    padding: 2px;
 }
 
-*/
+body > header > span#menu_suspenso > div#bloco > a:hover{
+
+    transition: 0.25s;
+
+    background-color: white;
+    color: black;
+
+}
 
 body > header > div#borda_header{
 
@@ -403,7 +422,7 @@ body > footer {
 
 body > footer > img{
 
-    width: 30vw;
+    width: 20vw;
 
     display: block;
     margin: auto;
@@ -416,7 +435,7 @@ body > footer > p{
     color: white;
 
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     text-decoration-line: none;
 
     margin-bottom: 2vw;
