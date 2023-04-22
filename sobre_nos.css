@@ -102,8 +102,17 @@
 
     body > header > span#menu_suspenso > div#bloco > a{
 
+    text-decoration-line: none;
+
     display: block;
     padding: 2px;
+
+    }
+
+    body > header > span#menu_suspenso > div#bloco > a:visited{
+
+    color: white;
+    
     }
 
     body > header > span#menu_suspenso > div#bloco > a:hover{

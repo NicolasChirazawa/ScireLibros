@@ -6,6 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scicelibros</title>
     <link rel="stylesheet" href="login.css">
+    
+    <style>
+
+    body > main > div{
+
+        height: 53vh;
+
+        top: 45vh;
+
+    }
+
+    body > main > p{
+
+        top: 45vh;
+
+        padding-top: 14vh;
+    }
+
+    body > main > p > a{
+
+        color: skyblue;
+        font-weight: bold;
+
+        text-decoration: none;
+    }
+
+    body > main > p > a:visited{
+
+        color: skyblue;
+
+        text-decoration: none;
+    }
+
+    body > main > p > a:hover{
+
+        text-decoration-line: underline;
+    }
+
+    </style>
 </head>
 
 <body>
@@ -16,13 +55,21 @@
 
         <div>
 
-            <p id="login">Fazer Login</p>
+            <p id="login">Criar Cadastro</p>
 
             <p class="informacoes">Usuário</p>
 
             <input type="text">
 
+            <p class="informacoes">Email</p>
+
+            <input type="text">
+
             <p class="informacoes">Senha</p>
+
+            <input type="text">
+
+            <p class="informacoes">Confirmar Senha</p>
 
             <input type="text">
 
@@ -32,9 +79,7 @@
 
         </div>
 
-        <p>Não tem uma conta na Scirelibros?</p>
-
-        <a id="link" href="cadastro.html"><button>Crie uma conta!</button></a>
+        <p>Já tem uma conta? <a href="login.html">Faça Login</a></p>
 
     </main>
 

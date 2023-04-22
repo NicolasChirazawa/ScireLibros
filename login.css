@@ -133,7 +133,13 @@
         padding-top: 2vh;
     }
 
-    body > main > button{
+    body > main > a#link{
+
+        color: #0a0a0a;
+        text-decoration: none;
+    } 
+
+    body > main > a#link > button{
 
         color: rgb(0, 0, 0);
         font-weight: bold;
@@ -153,6 +159,19 @@
         border-radius: 1.5vh;
         
         margin-top: 2vh;
+
+        cursor: pointer;
+    }
+
+    /* Animação do botão */
+
+    body > main > a#link > button:hover{
+
+        transition: 0.25s;
+
+        color: white;
+        background-color: #5e5e5e;
+        border: 0.4vh solid #5e5e5e;
     }
 
     body > footer{
