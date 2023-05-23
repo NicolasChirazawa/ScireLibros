@@ -11,17 +11,27 @@
 
     <title>ScireLibros</title>
 </head>
-<body>
+<body onresize="mudarTamanho()">
 
     <header id="cor_de_fundo">
 
         <img src="imagens/logo_completa_SCIRELIBROS.png" alt="Logo da SCIRELIBROS">
             
-        <div>
+        <div id="menuPC">
             <a class="item_menu">Página Principal</a>
             <a class="item_menu">Sobre nós</a>
             <a href="login.html" id="botao"><button>Login</button></a>
         </div>
+
+        <div id="mobile" onclick="clickMenu()"><i class="material-icons">menu</i></div>
+
+        <menu id="menuMobile">
+
+            <a>Página Principal</a>
+            <a>Sobre nós</a>
+            <a href="login.html">Login</a>
+
+        </menu>
 
     </header>
 
@@ -39,7 +49,7 @@
 
         <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus, accusamus quis magni sunt vero fuga neque excepturi cupiditate earum facilis sint enim blanditiis provident mollitia deleniti corporis nisi illo quod ullam placeat minus! Beatae, neque fugit molestias libero voluptatibus at nobis praesentium hic blanditiis itaque! Porro accusamus pariatur eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate distinctio explicabo deleniti magni facere iste reiciendis cum recusandae quod dicta? At animi blanditiis autem! Cumque quod possimus labore placeat expedita nisi aspernatur omnis ad maxime necessitatibus temporibus, ut veritatis vel quae aliquam. Asperiores nam et amet alias ut voluptates. Dolores molestiae facere hic itaque saepe inventore voluptatem commodi dignissimos fuga ullam nam ratione nisi deleniti perferendis vitae tenetur, iusto ea quas? Ea ullam, voluptate sed nesciunt rem consequatur esse similique, id quos aut quae dolorem molestias neque explicabo eveniet dolor accusamus cum! Consequatur, temporibus commodi deserunt est voluptas ducimus atque.</p>
 
-        <h2>Como aplicamos as ODS</h2>
+        <h2 id="ajuste">Como aplicamos as ODS</h2>
 
         <div id="container">
 
@@ -63,7 +73,7 @@
 
         </div>
 
-        <h2 id="ajuste">Nossos serviços</h3>
+        <h2 id="ajuste_2">Nossos serviços</h3>
 
         <div id="container2">
 
@@ -105,5 +115,38 @@
         <p class="links_importantes">© 2023-2023 ScireLibros</p>
 
     </footer>
+
+    <script>
+
+        function clickMenu(){
+
+            if (menuMobile.style.display == 'block') {
+                menuMobile.style.display = 'none'
+            } 
+                
+            else {
+
+                menuMobile.style.display = 'block';
+            }
+        }
+
+    </script>
+
+    <script>
+    
+        function mudarTamanho(){
+
+        if(window.innerWidth >= 768){
+
+            menuMobile.style.display = 'none';
+        }
+
+        else{
+
+            menuMobile.style.display = 'none';
+        }    
+
+    }
+    </script>
 </body>
 </html>

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    
+
+    /* Começo do header */
+
+    body > header{
+
+        display: block;
+        position: relative;
+
+        padding-bottom: 0px;
+    }
+
+    body > header > img {
+
+        margin: auto;
+    }
+
+    body > header > div#mobile {
+
+        background-color: #131A22;
+
+        color: white;
+        display: block;
+        
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration-line: none;
+
+        padding: 12px 0px 10px 0px;
+        border-top: 1px solid white;
+        margin-top: 10px;
+    } 
+
+    body > header > div#mobile:hover {
+
+        background-color: black;
+    } 
+
+    body > header > div#menuPC {
+
+        display: none;
+    } 
+
+    body > header > menu {
+
+        display: none;
+    } 
+
+    body > header > menu > a{
+
+        background-color: #131A22;
+
+        color: white;
+        display: block;
+
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration-line: none;
+
+        padding: 12px 0px 12px 0px;
+    }
+
+    body > header > menu > a:visited{
+
+        color: white;
+    }
+
+    body > header > menu > a:hover{
+
+        background-color: black;
+    }
+
+    /* Fim do header e começo do conteúdo */
+
+    body > main > h2{
+
+        font-size: 5vw;
+    }
+
+    body > main > p{
+
+        font-size: 2.2vw;
+    }
+
+    body > main > h2#ajuste{
+
+        margin-bottom: 40px;
+    }
+
+    body > main > div#container{
+
+        grid-template-columns: auto;
+    }
+
+    body > main > div#container > div > img{
+
+        width: 40vw;
+    }
+
+    body > main > div#container > div.nao-centralizado > h3{
+
+        font-size: 4vw;
+
+        margin: 0px 0px 10px 0px;
+    }
+
+    body > main > div#container > div.nao-centralizado > p{
+
+        font-size: 2.2vw;
+
+        margin: 0px 0px 25px 0px;
+    }
+
+    body > main > h2#ajuste_2{
+
+        margin: 10px 0px 20px 0px;
+    }
+
+}
