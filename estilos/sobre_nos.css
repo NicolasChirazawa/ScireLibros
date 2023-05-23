@@ -93,6 +93,16 @@
         transition: 0.25s;
     }
 
+    body > header > menu {
+
+        display: none;
+    } 
+
+    body > header > div#mobile {
+
+        display: none;
+    } 
+
     /* Começo do conteúdo principal */
 
     /* Início banner */
@@ -108,7 +118,6 @@
         background-size: cover;
 
         border-bottom: 1px solid white;
-
     }
 
     body > section > img{
