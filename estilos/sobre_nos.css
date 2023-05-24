@@ -169,7 +169,6 @@
         color: white;
 
         text-align: justify;
-        line-height: 25px;
         
         padding: 0px 80px 0px 80px;
         margin: auto;
@@ -363,13 +362,15 @@
         font-size: 12px;
         text-align: center;
 
-        margin-top: 10px;
+        margin: 10px 0px 20px 0px;
     }
 
     body > footer > p.links_importantes > a{
 
         color: white;
         text-decoration: none;
+
+        margin: 0px 20px 0px 20px;
     }
 
     body > footer > p.links_importantes > a:visited{

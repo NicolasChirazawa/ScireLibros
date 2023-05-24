@@ -4,45 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scicelibros</title>
-    <link rel="stylesheet" href="login.css">
-    
+
+    <link rel="stylesheet" href="estilos/login.css">
+
+    <title>Cadastro</title>
+
     <style>
 
-    body > main > div{
+        body > div{
 
-        height: 53vh;
+            height: 450px;
+        }
 
-        top: 45vh;
+        body > div > form > div{
 
-    }
+            margin: 10px 0px 10px 20px;
+        }
 
-    body > main > p{
+        body > p > strong{
 
-        top: 45vh;
-
-        padding-top: 14vh;
-    }
-
-    body > main > p > a{
-
-        color: skyblue;
-        font-weight: bold;
-
-        text-decoration: none;
-    }
-
-    body > main > p > a:visited{
-
-        color: skyblue;
-
-        text-decoration: none;
-    }
-
-    body > main > p > a:hover{
-
-        text-decoration-line: underline;
-    }
+            color: #87CEEB;
+        }
 
     </style>
 </head>
@@ -51,46 +33,47 @@
 
     <img id="logo" src="imagens/logo_completa_SCIRELIBROS.png" alt="Logo da Scirelibros">
 
-    <main>
+    <div>
 
-        <div>
+        <p>Fazer Login</p>
 
-            <p id="login">Criar Cadastro</p>
+        <form action="#" autocomplete="on" method="post">
 
-            <p class="informacoes">Usuário</p>
+            <div>
+                <label for="iususario_cadastro"> Username: </label> <br>
+                <input type="usuario_cadastro" name="usuario_cadastro" id="iusuario_cadastro" required placeholder="Insira um nome" autocomplete="username">
+            </div>
 
-            <input type="text">
+            <div>
+                <label for="iemail_cadastro"> Email: </label> <br>
+                <input type="email_cadastro" name="email_cadastro" id="iemail_cadastro" required placeholder="Insira um email" autocomplete="email">
+            </div>
 
-            <p class="informacoes">Email</p>
+            <div>
+                <label for="isenha"> Senha: </label> <br>
+                <input type="senha" name="senha" id="isenha" required placeholder="Insira uma senha" autocomplete="current-password">
+            </div>
 
-            <input type="text">
-
-            <p class="informacoes">Senha</p>
-
-            <input type="text">
-
-            <p class="informacoes">Confirmar Senha</p>
-
-            <input type="text">
+            <div>
+                <label for="isenha"> Confirmar senha: </label> <br>
+                <input type="senha" name="senha" id="isenha" required placeholder="Confirme sua senha" autocomplete="current-password">
+            </div>
 
             <p id="condicoes_de_uso">Ao entrar você concorda com os termos de <a>privacidade da Scirelibros</a>.</p>
-            
-            <button>Entrar</button>
+                
+            <input id="botao" type="submit" value="Enviar">
 
-        </div>
+        </form>
 
-        <p>Já tem uma conta? <a href="login.html">Faça Login</a></p>
+    </div>
 
-    </main>
+    <p>Já tem uma conta? <strong>Faça login!</strong></p>
 
     <footer>
-        
-        <div>
-
-        </div>
 
         <p><a href="#">Condições de Uso</a> • <a href="#">Políticas de Privacidade</a> • <a href="#">Ajuda</a></p>
 
+        <p>© 2023-2023 ScireLibros</p>
     </footer>
 </body>
 </html>
