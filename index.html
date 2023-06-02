@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/sobre_nos.css">
-    <link rel="stylesheet" href="estilos/sobre_nos_celular.css">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/index_celular.css">
 
     <title>ScireLibros - Sobre nós</title>
 </head>
@@ -18,7 +18,7 @@
             
         <div id="menuPC">
             <a class="item_menu">Página Principal</a>
-            <a class="item_menu">Sobre nós</a>
+            <a href="sobre_nos.html" class="item_menu">Sobre nós</a>
             <a href="login.html" id="botao"><button>Login</button></a>
         </div>
 
@@ -27,7 +27,7 @@
         <menu id="menuMobile">
 
             <a>Página Principal</a>
-            <a>Sobre nós</a>
+            <a href="sobre_nos.html">Sobre nós</a>
             <a href="login.html">Login</a>
 
         </menu>
@@ -36,66 +36,99 @@
 
     <section id="primeira_imagem" class="#primeira_parte">
 
-        <img src="imagens/logo_completa_SCIRELIBROS.png" alt="logo da SCIRELIBROS">
-
-        <p>Bem vindo ao</p>
-
     </section>
 
     <main>
 
-        <h2>Quem somos nós ?</h2>
+        <h2>Livros Populares</h2>
 
-        <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus, accusamus quis magni sunt vero fuga neque excepturi cupiditate earum facilis sint enim blanditiis provident mollitia deleniti corporis nisi illo quod ullam placeat minus! Beatae, neque fugit molestias libero voluptatibus at nobis praesentium hic blanditiis itaque! Porro accusamus pariatur eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate distinctio explicabo deleniti magni facere iste reiciendis cum recusandae quod dicta? At animi blanditiis autem! Cumque quod possimus labore placeat expedita nisi aspernatur omnis ad maxime necessitatibus temporibus, ut veritatis vel quae aliquam. Asperiores nam et amet alias ut voluptates. Dolores molestiae facere hic itaque saepe inventore voluptatem commodi dignissimos fuga ullam nam ratione nisi deleniti perferendis vitae tenetur, iusto ea quas? Ea ullam, voluptate sed nesciunt rem consequatur esse similique, id quos aut quae dolorem molestias neque explicabo eveniet dolor accusamus cum! Consequatur, temporibus commodi deserunt est voluptas ducimus atque.</p>
-
-        <h2 id="ajuste">Como aplicamos as ODS</h2>
-
-        <div id="container">
+        <section id="livros">
 
             <div>
-                <img id="primeira" src="imagens/desafio-ods-3.png" alt="Imagem referente a ODS 4 - Saúde de Qualidade">
-            </div>
+                <img src="imagens/livro_1984.jpg" alt="Livro 1984">
 
-            <div class="nao-centralizado">
-                <h3>Saúde de Qualidade</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis iure maiores reiciendis sed possimus tenetur mollitia ratione animi quidem veniam aperiam pariatur exercitationem repudiandae deleniti quos neque nostrum nihil sunt, placeat qui quod? Id cupiditate maxime fuga labore quia dolore consequuntur inventore, odio amet, temporibus qui necessitatibus cumque atque repellat veritatis totam impedit. Vitae, rerum quis deserunt fugit sit obcaecati ipsam officia, quo eum perspiciatis ut. Ex explicabo architecto est sunt nesciunt illum deserunt molestiae quae id voluptatibus quaerat tempore voluptatum quia sed consequuntur assumenda, reprehenderit molestias animi sint repellendus nisi. Ipsam placeat laudantium reiciendis incidunt ullam. Sunt, reprehenderit?</p>
+                <div>
+                    <p class="titulo">1984</p>
+                    <p class="autor">George Orwell</p>
+                    <p class="preco">R$18.90</p>
+                </div>
+
             </div>
 
             <div>
-                <img id="segunda" src="imagens/desafios-ods-10.png" alt="Imagem referente a ODS 10 - Reduzir as Desigualdades">
+                <img src="imagens/livro_principe.jpg" alt="Livro principe">
+
+                <div>
+                    <p class="titulo">O princípe</p>
+                    <p class="autor">Maquiavel</p>
+                    <p class="preco">R$16.18</p>
+                </div>
+
             </div>
 
-            <div class="nao-centralizado">
-                <h3>Reduzir as Desigualdades</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis iure maiores reiciendis sed possimus tenetur mollitia ratione animi quidem veniam aperiam pariatur exercitationem repudiandae deleniti quos neque nostrum nihil sunt, placeat qui quod? Id cupiditate maxime fuga labore quia dolore consequuntur inventore, odio amet, temporibus qui necessitatibus cumque atque repellat veritatis totam impedit. Vitae, rerum quis deserunt fugit sit obcaecati ipsam officia, quo eum perspiciatis ut. Ex explicabo architecto est sunt nesciunt illum deserunt molestiae quae id voluptatibus quaerat tempore voluptatum quia sed consequuntur assumenda, reprehenderit molestias animi sint repellendus nisi. Ipsam placeat laudantium reiciendis incidunt ullam. Sunt, reprehenderit?</p>
+            <div>
+                <img src="imagens/livros_senhor_das_moscas.jpg" alt="Livro Senhor das Moscas">
+
+                <div>
+                    <p class="titulo">Senhor das Moscas</p>
+                    <p class="autor">William Golding</p>
+                    <p class="preco">R$36.90</p>
+                </div>
+
             </div>
 
-        </div>
+            <div>
+                <img src="imagens/livro_por_que_ler_os_classicos.jpg" alt="Livros Por que ler os clássicos?">
 
-        <h2 id="ajuste_2">Nossos serviços</h3>
+                <div>
+                    <p class="titulo">Por que ler os clássicos?</p>
+                    <p class="autor">Italo Calvino</p>
+                    <p class="preco">R$19.90</p>
+                </div>
 
-        <div id="container2">
-
-            <div>Vender</div>
-            <div>Alugar</div>
-            <div>Doar</div>
-            
-            <div id="carrinho" class="circulo">
-                <i id="cor_1" class="material-icons">shopping_cart</i>
             </div>
 
-            <div id="cifra" class="circulo">
-                <i id="cor_2" id="simbolo_2" class="material-icons">attach_money</i>
+        </section>
+
+        <h2>Promoções</h2>
+        <section id="livros">
+
+
+            <div>
+                <img src="imagens/livro_nana.jpg" alt="Mangá Nana">
+
+                <div>
+                    <p class="titulo">Nana Vol.01</p>
+                    <p class="autor">Ai Yazawa</p>
+                    <p class="preco">R$27.50</p>
+                </div>
+                
             </div>
 
-            <div id="doar" class="circulo">
-                <i id="cor_3" class="material-icons">volunteer_activism</i>
+            <div>
+                <img src="imagens/livro_jjk.jpg" alt="Mangá Jujutsu Kaisen">
+
+                <div>
+                     <p class="titulo">Jujustu Kaisen 0</p>
+                    <p class="autor">Gege Akumati</p>
+                    <p class="preco">R$36.90</p>
+                </div>
+
             </div>
 
-        </div>
+            <div>
+                <img src="imagens/livro_given.jpg" alt="Mangá Given">
 
-        <button> Connheça a página principal</button>
+                <div>
+                    <p class="titulo">Given Vol.07</p>
+                    <p class="autor">Natsuki Kizo</p>
+                    <p class="preco">R$28.00</p>
+                </div>
 
+            </div>
+
+        </section>
+        
     </main>
 
     <footer>
