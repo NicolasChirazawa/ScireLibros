@@ -41,22 +41,22 @@
 
             <div>
                 <label for="iususario_cadastro"> Username: </label> <br>
-                <input type="usuario_cadastro" name="usuario_cadastro" id="iusuario_cadastro" required placeholder="Insira um nome" autocomplete="username">
+                <input type="usuario_cadastro" name="usuario_cadastro" id="iusuario_cadastro" required placeholder="Insira um nome" autocomplete="username" pattern="([a-z0-9]{4,})">
             </div>
 
             <div>
                 <label for="iemail_cadastro"> Email: </label> <br>
-                <input type="email_cadastro" name="email_cadastro" id="iemail_cadastro" required placeholder="Insira um email" autocomplete="email">
+                <input type="email_cadastro" name="email_cadastro" id="iemail_cadastro" required placeholder="Insira um email" autocomplete="email" pattern="([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z0-9]{2,})(\.[a-z0-9]{2,})?">
             </div>
 
             <div>
                 <label for="isenha"> Senha: </label> <br>
-                <input type="senha" name="senha" id="isenha" required placeholder="Insira uma senha" autocomplete="current-password">
+                <input type="senha" name="senha" id="isenha" required placeholder="Insira uma senha" autocomplete="current-password" pattern="^(?=.*[A-Z])(?=.*\d).*">
             </div>
 
             <div>
                 <label for="isenha"> Confirmar senha: </label> <br>
-                <input type="senha" name="senha" id="isenha" required placeholder="Confirme sua senha" autocomplete="current-password">
+                <input type="senha" name="senha" id="isenha" required placeholder="Confirme sua senha" autocomplete="current-password" pattern="^(?=.*[A-Z])(?=.*\d).*">
             </div>
 
             <p id="condicoes_de_uso">Ao entrar você concorda com os termos de <a>privacidade da Scirelibros</a>.</p>
